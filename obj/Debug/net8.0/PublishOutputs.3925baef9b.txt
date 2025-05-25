@@ -1,0 +1,11 @@
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\BackendAPI.exe
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\appsettings.Development.json
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\appsettings.json
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\BackendAPI.dll
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\BackendAPI.deps.json
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\BackendAPI.runtimeconfig.json
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\BackendAPI.pdb
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\CSharp-Series\BackendAPI\BackendAPI\obj\Debug\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
