@@ -1,41 +1,33 @@
-pipeline {
-  agent any
+﻿pipeline {
+    agent any
 
-  stages {
-    stage('Clone') {
-      steps {
-        git 'https://github.com/Nuttph/Jenkins02.git'
-      }
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/Nuttph/Jenkins02.git'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                bat 'docker build -t jenkins02-dotnet .'
+            }
+        }
+
+        stage('Run Docker Container') {
+            steps {
+                bat '''
+                docker stop jenkins02-container || exit 0
+                docker rm jenkins02-container || exit 0
+                docker run -d -p 8081:8081 --name jenkins02-container jenkins02-dotnet
+                '''
+            }
+        }
     }
 
-    stage('Restore') {
-      steps {
-        bat 'dotnet restore'
-      }
+    post {
+        always {
+            echo 'Pipeline finished.'
+        }
     }
-
-    stage('Build') {
-      steps {
-        bat 'dotnet build --configuration Release'
-      }
-    }
-
-    stage('Test') {
-      steps {
-        bat 'dotnet test'
-      }
-    }
-
-    stage('Publish') {
-      steps {
-        bat 'dotnet publish -c Release -o out'
-      }
-    }
-
-    stage('Deploy') {
-      steps {
-        echo "Deploy step here. (e.g., copy to VPS, restart service, etc)"
-      }
-    }
-  }
 }
